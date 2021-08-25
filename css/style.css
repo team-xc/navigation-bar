@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, .1);
+    border-radius: 25px;
+    display: flex;
+}
+
+.nav>.nav-item {
+    padding: 24px 32px;
+    margin: 0 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #b1b1b1;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+.nav>.is-active {
+    color: cornflowerblue;
+}
+
+.nav>.nav-item>svg {
+    margin-bottom: 2px;
+}
+
+.nav>.nav-item>svg>path {
+    transition: fill .3s;
+}
+
+.nav>.is-active>svg>path {
+    fill: cornflowerblue;
+}
